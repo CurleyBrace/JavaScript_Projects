@@ -1,2 +1,19 @@
 # JavaScript_Projects
- Projects both assigned to me and sought out regarding JavaScript while studying with The Tech Academy
+This is a folder comprised of projects that I've completed using JavaScript while in The Tech Academy.
+
+## Projects Included
+
+### *
+   -
+   -
+   -
+
+### *
+   -
+   -
+   -
+
+### *
+   -
+   -
+   -
