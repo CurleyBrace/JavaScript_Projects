@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Finding Birth Year</title>
+        <script src="./JS/main.js"></script>    <!--Calling Main.JS File-->
+    </head>
+
+    <body>
+        <form onsubmit = "getBirthYear(document.getElementById('ageNum').value);">  <!--On Submit will call Function to return Alert Window-->
+        <label for = "ageNum">How old are you?</label><br>
+        <input type = "number" id = "ageNum" name = "ageNum" value = ""><br> <!--Taking a number input to send to the Function-->
+        <input type = "submit">
+        <input type = "reset">
+        </form>
+    </body>
+</html>
