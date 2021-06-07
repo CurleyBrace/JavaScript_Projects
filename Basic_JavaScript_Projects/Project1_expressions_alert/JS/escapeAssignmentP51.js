@@ -1,0 +1,1 @@
+window.alert("Writing a string that contains a \' or \" as the assignment.");

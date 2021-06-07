@@ -1,0 +1,1 @@
+document.write(15 + 21); //Adding two numbers together in an expression

@@ -1,0 +1,2 @@
+var A = "I wanted to add a variable also for testing.";
+document.write("While the assignment was just to cocantenate a string in the write function, " + A +  " The previous sentence was the variable.");
