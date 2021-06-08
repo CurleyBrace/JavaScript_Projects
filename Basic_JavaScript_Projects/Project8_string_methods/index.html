@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>String Assignment</title> 
+        <script src = "./JS/main.js"></script> <!--Calling the JS File-->
+    </head>
+
+    <body>
+
+        <!--Utilizing .concat to combine three pre-defined strings-->
+        <button onclick="concatMeth()">Press to demonstrate Concat Methods</button>
+        <p id="concatMethod"></p>
+
+        <!--Slice Method Demonstration-->
+        <button onclick="sliceMeth()">Press to demonstrate Slice Methods</button>
+        <p id="sliceMethod"></p>
+        <br>
+
+        <!--Input text and convert it to full Upper Case-->
+        <p>Enter text below in lowercase to demonstrate toUpper</p>
+        <input type="text" id="enterLower">
+        <button onclick="toUpper()">Submit</button>
+        <p id="returnUpper"></p>
+        <br>
+        <br>
+
+        <!--Taking an input and searching it against this pre-determined string-->
+        <p>Here's a short paragraph about dogs, type in any word in the input box below the paragraph to see it's location in the string.<br></p>
+        <p id="paraToSearch">The Dog is a domestic animal. It is most of the often-used animal as a pet. <br>
+            People prefer to have a dog as a pet rather than any other animal. The dog <br>
+            serves its master selflessly. All that it wants in return is love and care of the owner.</p>
+        <input type="text" id="enterSearch">
+        <button onclick="toSearch()">Submit</button>
+        <p id="returnSearch"></p>
+        <br>
+
+        <!--Taking an input for a number and returning it back as a string-->
+        <p>Input a number below and click submit and it will be returned as a string to the element below.
+        <br>To prove it is a string it will also be sliced and the value in the first position of the string will be displayed.
+        </p>
+        <input type="number" id="numInput">
+        <button onclick="numString()">Submit</button>
+        <p id = "returnStr"></p>
+        <br>
+        <br>
+
+        <!--Taking an input and returning after using ToPrecision to 5 places or ToFixed with 2 places-->
+        <p>Enter a number to demonstrate the Precision Method.</p>
+        <input type="number" id="baseVal"><br>
+        <button onclick="fixedMethod()">Fixed</button>
+        <button onclick="precMethod()">Precision</button>
+        <p id="valueReturn"></p>
+        <p id="numReturn"></p>
+        <br>
+        <br>
+
+
+    </body>
+</html>
