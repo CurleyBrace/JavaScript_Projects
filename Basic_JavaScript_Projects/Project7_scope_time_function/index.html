@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scope Assignment</title> 
+        <script src = "./JS/main.js"></script> <!--Calling the JS File-->
+    </head>
+
+    <body>
+        <!--Console Error Example-->
+        <p id = "errorTest" onclick="errorFunc()">Click here for Console Error.</p>
+
+        <!--Time Function Given in Step 153-->
+        <p id="timeOfDay"></p>
+        <button onclick="timeFunction()">Click here to get the time.</button>
+
+        <!--Showing a method using If Statements-->
+        <p id = "methodAssign" onclick="methodFunction()">Click here for Method Assignment</p>
+        <br>
+        <!--Assigning an input, calling a method and returning based on conditions-->
+        <p>Input your age and I'll compare our ages:</p>
+        <input type="number" id ="ageGet">
+        <button onclick="ageCompare()">Submit</button>
+        <p id ="returnAgeDif"></p>
+        
+
+    </body>
+</html>
