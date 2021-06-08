@@ -45,6 +45,10 @@ function genshinChar(element, gender, weapon, rank) {
     genshinChar.charRank = rank;
 }
 
+//Utilizing the custom constructor
+var Amber = new genshinChar("Pyro", "Female", "Bow", 4);
+
+
 //Creating a nested function
 function nestedFunctionEx(){
     document.getElementById("nestedFunction").innerHTML = "Next year you will be "+subFunc()+" years old.";
