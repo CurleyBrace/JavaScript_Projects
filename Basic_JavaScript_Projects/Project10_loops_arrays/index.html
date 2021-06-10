@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Loops and Arrays Assignment</title> 
+        <script src = "./JS/main.js"></script> <!--Calling the JS File-->
+    </head>
+
+    <body>
+        <!--Calling the for loop-->
+        <div id="forLoopCountAssign">
+            <h3>For Loop Counting Assignment</h3>
+            <p>Type in a number to display a loop that will count to it.
+            <br>Added a break statement to stop at 20 and a continue 
+            <br>statement that will skip the number 7.</p>
+            <input type="number" id= "inputCount">
+            <button onclick="callLoop()">Submit</button>
+            <button onclick="document.getElementById('countLoop').innerHTML = ''">Reset</button>
+            <p id="countLoop"></p>
+        </div>
+        <br>
+
+        <!--Calling the string length-->
+        <div id="stringLengthAssign">      
+            <h3>String Length Assignment</h3>
+            <p id="strLen">Type in anything and click submit to return the length of your input.</p>
+            <input type="text" id="inputString">
+            <button onclick="strLength()">Submit</button>
+            <p id="outputString"></p>
+        </div>
+        <br>
+
+        <!--Demonstrating a for Loop with predetermined values onclick or changing one with a let var-->
+        <div id="forLoopArrayAssign">            
+            <h3>For Loop Array Assignment, and Let Assignment</h3>
+            <p>Click the Loop button to demonstrate a for Loop
+            <br>Or Click Let to replace a random part of the array</p>
+
+            <p id="listOfInstruments"></p>
+            <button onclick="forLoop(0)">Loop Display</button>
+            <button onclick="forLoop(1)">Let Display</button>
+        </div>
+        <br>
+
+        <!--Demonstrating an array with two sets of pre-determined values-->
+        <div id="arrayAssign">
+            <h3>Display Array Assignment</h3>
+            <p>Check a box to display a list of breeds:</p>
+
+            <!--Input-->
+            <input type="checkbox" id="dogInput" name="breedCheck" value="dog">
+            <label for="dog">Dogs</label><br>
+            <input type="checkbox" id="catInput" name="breedCheck" value="cat">
+            <label for="cat">Cats</label><br>
+
+            <!--The part required by the assignment, the rest was to make it 
+                    slightly more fun and practice input types              -->
+            <button onclick="printArray()">Submit</button>
+            <button onclick="arrayReset()">Reset</button>
+            <p id="arrayText"></p>
+        </div>
+        <br>
+
+        <!--Displaying the constant, and then altering properies and display the altered result-->
+        <div id="constAssign">
+            <h3>Constant Assignment</h3>
+            <p>You can choose to display the normal properties of a constant
+            <br>or to display it with altered properties. </p>
+            <p id ="consText"></p>
+            <button onclick="consFunction('default')">Default</button>
+            <button onclick="consFunction('altered')">Changed</button>
+        </div>
+        <br>
+    
+        <!--Object Assignment this will create and display characteristics of an object-->
+        <div id="objectAssign">
+            <h3>Object Assignment</h3>
+            <label for="objects">Please select a type of pet to view information about it: </label>
+            <select name="objects" id="objectInput">
+                <option value="dogs">Dogs</option>
+                <option value="cats">Cats</option>
+                <option value="fish">Fish</option>
+            </select>
+            <button onclick="objectFunc()">Submit</button>
+            <p id="objectText"></p>
+        </div>
+    </body>
+</html>
