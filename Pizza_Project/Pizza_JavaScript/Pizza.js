@@ -4,12 +4,14 @@ function getReceipt() {
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size");
+    //Checking each radio and pulling the size from it
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
             text1 = text1+selectedSize+"<br>";
         }
     }
+    //Adding Values Depending on User Input of Size
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Small Pizza") {
@@ -25,26 +27,32 @@ function getReceipt() {
     console.log(selectedSize+" = $"+sizeTotal+".00");
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
+    //Sending the price of the selected size and text to display with it
     getTopping(runningTotal, text1);
 };
 
 function getTopping(runningTotal, text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
+    //Fetching the array of options for toppings
     var toppingArray = document.getElementsByClassName("toppings");
+    //Parsing through the array to find selected options
     for (var j = 0; j < toppingArray.length; j++) {
         if (toppingArray[j].checked) {
+            //Pushing, or adding each topping that came back as checked to the selectedTopping array
             selectedTopping.push(toppingArray[j].value);
             console.log("selected topping item: ("+toppingArray[j].value+")");
             text1 = text1+toppingArray[j].value+"<br>";
         }
     }
+    //Counting the toppings based on the array that the toppings were pushed to
     var toppingCount = selectedTopping.length;
     if(toppingCount > 1) {
         toppingTotal = (toppingCount - 1);
     } else {
         toppingTotal = 0;
     }
+    //Compiling all of the selected options and displaying them through the console.log and showText and totalPrice divs
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected topping items: "+toppingCount);
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
