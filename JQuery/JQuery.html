@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+        //When the document is loaded, load this script
+        $(document).ready(function() {
+            $("html").append(
+                //creating the body elements for the document, setting P-4 to hidden to display some things I learned
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Click to execute jQuery Challenge</p>\
+                            <p id='2'>I am red</p>\
+                            <p id='3'>Hide the Header</p>\
+                            <p id='4' style='display:none'>This is to show a few effects and test the On Event Handler</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //Using the .on showing how to do two seperate functions on with the same handler
+            $("#1").on({
+                "click": function() {
+                    $("p").hide("slow");
+                    $("#4").show("slow");
+                },
+                "mouseover": function() {
+                    $("#1").text("You hovered! Now try clicking!");
+                }      
+                });
+
+            //Changing 2's Text to red, and adding a function to 3 to hide onclick
+            $("#2").css({"color":"red"});
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+
+        });
+    </script>
+
+</html>
