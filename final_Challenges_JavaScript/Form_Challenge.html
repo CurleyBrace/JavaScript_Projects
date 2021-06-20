@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Challenge</title>
+        <meta charset="utf-8">
+        <script src="js/Form_Challenge.js"></script>
+    </head>
+
+    <body>
+
+        <!--Form calling JS to validate the input for correct format and
+        values. Note, could be done without JS using tel parameters and 
+        'required', but assignment called for a JS Function to validate the form-->
+        <form id="testForm" onsubmit="validateForm()">
+            <label for="phoneNum">Phone Number:</label><br>
+            <input type="tel" id="phoneNum" name="phoneNum" placeholder="123-456-7890">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"><br><br>
+            <small>Format: 123-456-7890</small>
+        </form>
+    </body>
+</html>

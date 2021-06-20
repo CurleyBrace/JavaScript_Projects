@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    height: 600px;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.bookmarkOne {
+    background: greenyellow;
+}
+
+.bookmarkTwo {
+    background: aqua;
+}
+
+.bookmarkThree {
+    background: orange;
+}

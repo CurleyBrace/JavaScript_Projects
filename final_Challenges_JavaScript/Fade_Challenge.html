@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fade Chaallenge</title>
+        <meta charset="utf-8">
+
+        <!--Setting CS for the body and for the fade-out style-->
+        <style>
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Adding Fade-out to the entire body once the page is loaded-->
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
+
+        <p id="testText">
+            This text should fade-in with the rest of the page.
+        </p>
+
+        <!--Removing the fade-out after the page is loaded-->
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
+    </body> 
+</html>

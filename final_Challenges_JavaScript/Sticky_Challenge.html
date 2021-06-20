@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky Challenge</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/Sticky_Challenge.css">
+        <script src="js/Sticky_Challenge.js"></script>
+    </head>
+
+    <body>
+        <div class="bodyFill1">
+            This Div is to fill the body so that we can scroll and test the sticky styling.
+        </div>
+
+        <div class="bodyFill2">
+            This Div is to fill the body so that we can scroll and test the sticky styling.
+        </div>
+
+        <div class="bodyFill3">
+            This Div is to fill the body so that we can scroll and test the sticky styling.
+        </div>
+
+        <div class="stickyDiv">
+            <button class="openBtn" onclick="openForm()">Open Form</button>
+            
+            <div class="stickyPopup" id="stickyForm">
+                <form class="formContainer">
+                    <h1>Sticky Pop-up</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password" name="password" required>
+                    
+                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

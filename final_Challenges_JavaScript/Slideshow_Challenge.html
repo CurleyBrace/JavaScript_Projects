@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slideshow Challenge</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/Slideshow_Challenge.css">
+    </head>
+
+    <body>
+        <div id="slideshow">
+            <div>
+                <img src="img/slideshowOne.jpg" alt="Dog Picture 1">
+            </div>
+            <div>
+                <img src="img/slideshowTwo.jpg" alt="Dog Picture 2">
+            </div>
+            <div>
+                <img src="img/slideshowThree.jpg" alt="Dog Picture 3">
+            </div>
+        </div>
+    </body>
+    <script>
+        $("slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        }, 3000);
+    </script>
+    
+</html>
