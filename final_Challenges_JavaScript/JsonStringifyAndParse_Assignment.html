@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Stringify and Parse Assignment</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <p id="testString"></p>
+        <p id="testParse"></p>
+
+        <script>
+            var cat = {name: "Index", breed: "American Shorthair", color: "Black"};
+            var stringPrint = JSON.stringify(cat);
+            var parsePrint = JSON.parse(stringPrint);
+            document.getElementById("testString").innerHTML = stringPrint;
+            document.getElementById("testParse").innerHTML = parsePrint.name + " is the name of our " + parsePrint.color + " " + parsePrint.breed +". ";
+
+        </script>
+    </body>
+
+    
+</html>

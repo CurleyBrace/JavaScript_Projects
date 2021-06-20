@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>On Double Click Handler Challenge</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <p id="testText" style="cursor:pointer" onselectstart="return false">Double click me for a surprise!</p>
+        <img id="hiddenImg" src="img/dogZoom.jpg" style="display:none">
+
+        <script>
+            document.getElementById("testText").addEventListener('dblclick', hideShow);
+            function hideShow() {
+                var img = document.getElementById("hiddenImg");
+                if (img.style.display === "none") {
+                    img.style.display = "block";
+                    document.getElementById("testText").innerHTML = "Now click me again to hide it!"
+                } else {
+                    document.getElementById("testText").innerHTML = "You can keep clicking if you'd like!"
+                    img.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
